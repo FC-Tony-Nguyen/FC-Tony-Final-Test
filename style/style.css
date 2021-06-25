@@ -4,17 +4,18 @@
   font-family: 'Quicksand', sans-serif;
   list-style-type: none;
 }
-/*----------------------------------------------------------------*/
+/*--------------------------------------------HEADER--------------------------------------------------*/
 .header{
   position: absolute;
   width: 100%;
-  
 }
 .header-menu{
   float: right;
   margin: 50px 15% 0 0;
   font-size: 30px;
+  cursor: pointer;
 }
+/*--------------------------------------------JUMBOTRON--------------------------------------------------*/
 .section-jumbotron{
   background: url(../image/jumbotron_background.png) center no-repeat;
   background-size: cover;
@@ -39,7 +40,7 @@
   margin: 0 0 80px 0;
 }
 .jumbotron-button-wrap{
- padding-bottom: 300px;
+  padding-bottom: 300px;
 }
 .jumbotron-button{
   color: #fff;
@@ -55,7 +56,7 @@
 .jumbotron-button:hover{
   background-color: #309383;
 }
-/*------------------------------------------------------------------------*/
+/*----------------------------------------------INTRODUCTION----------------------------------------------------*/
 .section-introduction{
   width: 100%;
   text-align: center;
@@ -81,7 +82,7 @@
 .introduction-content span {
   color: #000;
 }
-/*------------------------------------------------------------------------*/
+/*---------------------------------------------GENERIC--------------------------------------------------------*/
 .section-generic{
   text-align: center;
   margin: 0 0 100px 0;
@@ -129,7 +130,7 @@
   width: 80%;
   margin: 0 auto;
 }
-/*--------------------------------------------------------------------------*/
+/*------------------------------------------------SPECIALIST----------------------------------------------------*/
 .section-specialist{
   width: 100%;
   height: 600px;
@@ -228,7 +229,7 @@
 .slide-three {
   background-color: #fff;
 }
-/*-------------------------------------------------*/
+/*----------------------------------------------------------COUNTER------------------------------------------------*/
 .section-counter{
   background: url(../image/counter_background.png) no-repeat center;
   background-size: cover;
@@ -254,12 +255,12 @@
 .counter-arrow{
   font-size: 30px;
   border-radius: 60px;
-  padding: 10px 11px;
+  padding: 10px 12px;
   background-color: #3dc9b3;
   color: #fff;
   margin: 0 0 50px 0;
 }
-/*-----------------------------------------------------*/
+/*-------------------------------------------------------PORTFOLIO--------------------------------------------------*/
 .section-portfolio{
   margin: 100px 0;
   width: 100%;
@@ -326,7 +327,7 @@
   font-weight: 500;
   color: #fff;
 }
-/*---------------------------------------------------------*/
+/*----------------------------------------------------------SUBSCRIBE-------------------------------------------------*/
 .section-subscribe{
   width: 100%;
   text-align: center;
@@ -358,6 +359,12 @@
   color: #fff;
   letter-spacing: 1px;
   font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.subscribe-button:hover{
+  background-color: #fff;
+  color: #3dc9b3;
 }
 .subscribe-arrow{
   color: #fff;
@@ -369,7 +376,7 @@
   padding: 15px 16px;
   border-radius: 60px;
 }
-/*-----------------------------------------------------*/
+/*---------------------------------------------------------FOOTER-----------------------------------------------------*/
 .footer{
   width: 100%;
 }
@@ -436,7 +443,7 @@
   background-color: #242830;
 }
 .subfooter-title{
-  color: #4e535b;
+  color: #6f757d;
   font-size: 14px;
   text-align: center;
   padding: 50px 0;
