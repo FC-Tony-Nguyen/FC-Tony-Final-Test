@@ -50,6 +50,10 @@
   padding: 15px 30px;
   border-radius: 5px;
   border-bottom: 4px solid #309383;
+  transition: all 0.5s linear;
+}
+.jumbotron-button:hover{
+  background-color: #309383;
 }
 /*------------------------------------------------------------------------*/
 .section-introduction{
@@ -129,8 +133,23 @@
 .section-specialist{
   width: 100%;
   height: 600px;
-  background: url(../image/specialist_background.png) no-repeat center;
+  background-color: #f3f5f8; 
   background-size: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.specialist-phone{
+  z-index: 9;
+  position: absolute;
+  left: 300px;
+  top: 0;
+  height: 600px;
+  width: 1000px;
+}
+.specialist-shadow{
+  z-index: 9;
+  position: absolute;
+  left: 870px;
 }
 .specialist-wrapper{
   float: right;
@@ -235,7 +254,7 @@
 .counter-arrow{
   font-size: 30px;
   border-radius: 60px;
-  padding: 10px;
+  padding: 10px 11px;
   background-color: #3dc9b3;
   color: #fff;
   margin: 0 0 50px 0;
@@ -306,4 +325,130 @@
   font-size: 15px;
   font-weight: 500;
   color: #fff;
+}
+/*---------------------------------------------------------*/
+.section-subscribe{
+  width: 100%;
+  text-align: center;
+  background: url(../image/subscribe_background.png) no-repeat center;
+  background-size: 100%;
+  position: relative;
+}
+.subscribe-icon{
+  padding: 150px 0 30px 0;
+}
+.subscribe-title{
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 0 0 50px 0;
+}
+.subscribe-input{
+  width: 15%;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin: 0 0 150px 0;
+}
+.subscribe-button{
+  height: 50px;
+  width: 5%;
+  background-color: #3dc9b3;
+  border: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.subscribe-arrow{
+  color: #fff;
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(97, 210, 193, 0.8);
+  padding: 15px 16px;
+  border-radius: 60px;
+}
+/*-----------------------------------------------------*/
+.footer{
+  width: 100%;
+}
+.footer-wrapper{
+  text-align: center;
+  background-color: #f3f5f8;
+}
+.footer-title{
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 100px 0 20px 0;
+
+}
+.footer-dot{
+  padding: 0 0 100px 0;
+}
+.footer-information{
+  width: 100%;
+  margin: 0 0 100px 0;
+}
+.footer-information li{
+  display: inline-block;
+  background-color: #fff;
+  padding: 20px 80px;
+}
+.footer-information li:last-child{
+  padding: 21px 80px;
+}
+.footer-information li:not(:last-child){
+  margin-right: 20px;
+}
+.infomation-icon{
+  padding: 0 0 10px 0;
+}
+.infomation-title{
+  font-size: 14px;
+  color: #3dc9b3;
+  letter-spacing: 1px;
+  padding: 0 0 20px 0;
+}
+.information-content{
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  color: #949a9f;
+}
+.footer-brand{
+  padding: 0 0 100px 0;
+}
+.footer-brand li{
+  display: inline-block;
+  background-color: #000;
+  border-radius: 60px;
+}
+.footer-brand li:not(:last-child){
+  margin: 0 20px 0 0;
+}
+.brand-icon{
+  padding: 8px 10px;
+  width: 14px;
+  height: 14px;
+}
+.subfooter{
+  background-color: #242830;
+}
+.subfooter-title{
+  color: #4e535b;
+  font-size: 14px;
+  text-align: center;
+  padding: 50px 0;
+  
+}
+.subfooter-title li{
+  display: inline-block;
+  width: 40%;
+}
+.title-left, .title-right{
+  font-weight: 400;
+}
+.title-right span{
+  color: #f0f1f1;
 }
