@@ -478,12 +478,6 @@
     font-size: 1.5vw;
     width: 50%;
   }
-  .introduction-dot{
-    width: 100%;
-  }
-  .generic-dot{
-    width: 100%;
-  }
   .circle-content{
     font-size: 1.3vw;
   }
@@ -509,20 +503,11 @@
   .subscribe-button{
     width: 15%;
   }
-  .footer-dot{
-    width: 100%;
-  }
 }
-@media only screen and (max-width: 976px ) and (min-width: 714px){
+@media only screen and (max-width: 976px ) and (min-width: 716px){
   .introduction-content{
     font-size: 1.5vw;
     width: 50%;
-  }
-  .introduction-dot{
-    width: 100%;
-  }
-  .generic-dot{
-    width: 100%;
   }
   .generic-circles li{
     display: block;
@@ -579,9 +564,6 @@
   .footer-information li{
     width: 30%;
   }
-  .footer-dot{
-    width: 100%;
-  }
 }
 @media only screen and (max-width: 716px ){
   .jumbotron-title{
@@ -614,14 +596,17 @@
   .generic-circles li:not(:last-child){
     padding: 0;
   }
-  .specialist-dot{
-    width: 100%;
-  }
   .circle-image{
     padding: 0 0 20px 0;
   }
   .circle-title::before{
     left: 45%;
+  }
+  .specialist-wrapper{
+    width: 65%;
+  }
+  .specialist-dot{
+    width: 100%;
   }
   .specialist-contents{
     width: 80%;
@@ -630,7 +615,7 @@
     padding: 50px 0 0 0;
   }
   .specialist-contents .specialist-content{
-    font-size: 2.2vw;
+    font-size: 2.6vw;
   }
   .specialist-phone{
     left: 0;
@@ -650,10 +635,10 @@
     margin-right: 0;
   }
   .portfolio-title{
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .portfolio-content{
-    font-size: 2.5vw;
+    font-size: 3vw;
     width: 100%;
     padding: 0 0 50px 0;
   }
