@@ -418,11 +418,11 @@
 .footer-information li:not(:last-child){
   margin-right: 20px;
 }
-.infomation-icon{
+.information-icon{
   padding: 0 0 10px 0;
   margin: 7% 0 0 0;
 }
-.infomation-title{
+.information-title{
   font-size: 14px;
   color: #3dc9b3;
   letter-spacing: 1px;
