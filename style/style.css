@@ -4,7 +4,7 @@
   font-family: 'Quicksand', sans-serif;
   list-style-type: none;
 }
-/*--------------------------------------------HEADER--------------------------------------------------*/
+/*---------------------------------HEADER------------------------------------*/
 .header{
   position: absolute;
   width: 100%;
@@ -15,7 +15,7 @@
   font-size: 30px;
   cursor: pointer;
 }
-/*--------------------------------------------JUMBOTRON--------------------------------------------------*/
+/*--------------------------------JUMBOTRON-----------------------------------*/
 .section-jumbotron{
   background: url(../image/jumbotron_background.png) center no-repeat;
   background-size: cover;
@@ -39,10 +39,10 @@
   letter-spacing: 3px;
   margin: 0 0 80px 0;
 }
-.jumbotron-button-wrap{
+.jumbotron-button{
   padding-bottom: 300px;
 }
-.jumbotron-button{
+.jumbotron-button a{
   color: #fff;
   font-size: 15px;
   letter-spacing: 3px;
@@ -53,10 +53,10 @@
   border-bottom: 4px solid #309383;
   transition: all 0.5s linear;
 }
-.jumbotron-button:hover{
+.jumbotron-button a:hover{
   background-color: #309383;
 }
-/*----------------------------------------------INTRODUCTION----------------------------------------------------*/
+/*------------------------------------INTRODUCTION------------------------------------*/
 .section-introduction{
   width: 100%;
   text-align: center;
@@ -72,9 +72,10 @@
   margin: 0 0 20px 0;
 }
 .introduction-content{
-  width: 36%;
+  width: 38.5%;
   font-size: 14px;
   font-weight: 700;
+  line-height: 30px;
   color: #a7adb2;
   margin: 0 auto;
   padding: 0 0 100px 0;
@@ -82,7 +83,7 @@
 .introduction-content span {
   color: #000;
 }
-/*---------------------------------------------GENERIC--------------------------------------------------------*/
+/*-----------------------------------GENERIC-----------------------------------------*/
 .section-generic{
   text-align: center;
   margin: 0 0 100px 0;
@@ -101,10 +102,10 @@
 }
 .generic-circles li{
   display: inline-block;
-  width: 30%;
+  width: 25%;
 }
 .generic-circles li:not(:last-child){
-  padding: 0 50px 0 0;
+  padding: 0 20px 0 0;
 }
 .circle-image{
   padding: 0 0 50px 0;
@@ -127,7 +128,8 @@
 }
 .circle-content{
   color: #abb0b3;
-  width: 80%;
+  font-weight: 700;
+  width: 100%;
   margin: 0 auto;
 }
 /*------------------------------------------------SPECIALIST----------------------------------------------------*/
@@ -142,15 +144,15 @@
 .specialist-phone{
   z-index: 9;
   position: absolute;
-  left: 300px;
+  left: 16%;
   top: 0;
   height: 600px;
   width: 1000px;
 }
 .specialist-shadow{
-  z-index: 9;
+  z-index: 8;
   position: absolute;
-  left: 870px;
+  left: 47%;
 }
 .specialist-wrapper{
   float: right;
@@ -229,7 +231,7 @@
 .slide-three {
   background-color: #fff;
 }
-/*----------------------------------------------------------COUNTER------------------------------------------------*/
+/*------------------------------------COUNTER------------------------------------------*/
 .section-counter{
   background: url(../image/counter_background.png) no-repeat center;
   background-size: cover;
@@ -241,14 +243,18 @@
   letter-spacing: 10px;
   font-weight: 400;
   font-size: 40px;
-  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.counter-undertitle{
+  font-size: 25px;
+  color: #fff;
+  letter-spacing: 10px;
+  font-weight: 400;
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.counter-title span{
-  font-size: 25px;
-}
-.counter-title span span{
+.counter-undertitle span{
   font-weight: 700;
   font-style: italic;
 }
@@ -260,7 +266,7 @@
   color: #fff;
   margin: 0 0 50px 0;
 }
-/*-------------------------------------------------------PORTFOLIO--------------------------------------------------*/
+/*------------------------------------------PORTFOLIO-----------------------------------------*/
 .section-portfolio{
   margin: 100px 0;
   width: 100%;
@@ -275,6 +281,9 @@
   width: 30%;
   cursor: pointer;
 }
+.portfolio-wrapper li:not(:last-child){
+  margin-right: 20px;
+}
 .portfolio-wrapper li:hover .portfolio-hidden{
   display: block;
 }
@@ -282,13 +291,13 @@
   position: relative;
 }
 .portfolio-image{
-  margin: 0 0 20px 0;
   position: relative;
+  width: 100%;
 }
 .portfolio-title{
   font-size: 15px;
   letter-spacing: 2px;
-  margin: 0 0 50px 0;
+  margin: 20px 0 50px 0;
   position: relative;
 }
 .portfolio-title::before{
@@ -296,7 +305,7 @@
   border: solid #3dc9b3;
   border-width: 0 0 4px 0;
   display: inline-block;
-  padding: 20px;
+  padding: 5%;
   position: absolute;
   left: 45%;
   top: 0;
@@ -310,29 +319,28 @@
 }
 .portfolio-hidden{
   position: absolute;
-  width: 93%;
-  height: 89.5%;
+  width: 100%;
+  height: 98%;
   top: 0;
-  left: 3.5%;
   background-color: rgba(97, 206, 184, 0.7);
   display: none;
 }
 .hidden-icon{
-  margin: 60px 0 20px 0;
+  margin: 20% 0 5% 0;
   font-size: 30px;
   color: #fff;
 }
 .hidden-text{
-  font-size: 15px;
+  font-size: 1.3vw;
   font-weight: 500;
   color: #fff;
 }
-/*----------------------------------------------------------SUBSCRIBE-------------------------------------------------*/
+/*----------------------------------------SUBSCRIBE--------------------------------------------*/
 .section-subscribe{
   width: 100%;
   text-align: center;
   background: url(../image/subscribe_background.png) no-repeat center;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
 }
 .subscribe-icon{
@@ -376,7 +384,7 @@
   padding: 15px 16px;
   border-radius: 60px;
 }
-/*---------------------------------------------------------FOOTER-----------------------------------------------------*/
+/*-------------------------------------------FOOTER----------------------------------------------*/
 .footer{
   width: 100%;
 }
@@ -400,16 +408,19 @@
 .footer-information li{
   display: inline-block;
   background-color: #fff;
-  padding: 20px 80px;
+  width: 20%;
+  height: 150px;
+  cursor: pointer;
 }
-.footer-information li:last-child{
-  padding: 21px 80px;
+.footer-information li:hover .information-content{
+  color: #000;
 }
 .footer-information li:not(:last-child){
   margin-right: 20px;
 }
 .infomation-icon{
   padding: 0 0 10px 0;
+  margin: 7% 0 0 0;
 }
 .infomation-title{
   font-size: 14px;
@@ -422,6 +433,7 @@
   font-style: normal;
   font-weight: 700;
   color: #949a9f;
+  transition: all 0.5s linear;
 }
 .footer-brand{
   padding: 0 0 100px 0;
@@ -430,6 +442,7 @@
   display: inline-block;
   background-color: #000;
   border-radius: 60px;
+  cursor: pointer;
 }
 .footer-brand li:not(:last-child){
   margin: 0 20px 0 0;
@@ -451,11 +464,231 @@
 }
 .subfooter-title li{
   display: inline-block;
-  width: 40%;
+  width: 48%;
 }
 .title-left, .title-right{
   font-weight: 400;
 }
 .title-right span{
   color: #f0f1f1;
+}
+/*---------------------------------RESPONSIVE--------------------------------------*/
+@media only screen and (max-width: 1200px ) and (min-width: 976px){
+  .introduction-content{
+    font-size: 1.5vw;
+    width: 50%;
+  }
+  .introduction-dot{
+    width: 100%;
+  }
+  .generic-dot{
+    width: 100%;
+  }
+  .circle-content{
+    font-size: 1.3vw;
+  }
+  .circle-title::before{
+    left: 40%;
+  }
+  .specialist-contents .specialist-content{
+    font-size: 1.2vw;
+  }
+  .specialist-phone{
+    left: 1%;
+  }
+  .specialist-dot{
+    width: 100%;
+  }
+  .portfolio-title::before{
+    padding: 10%;
+    left: 40%;
+  }
+  .subscribe-input{
+    width: 30%
+  }
+  .subscribe-button{
+    width: 15%;
+  }
+  .footer-dot{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 976px ) and (min-width: 714px){
+  .introduction-content{
+    font-size: 1.5vw;
+    width: 50%;
+  }
+  .introduction-dot{
+    width: 100%;
+  }
+  .generic-dot{
+    width: 100%;
+  }
+  .generic-circles li{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .generic-circles li:not(:last-child){
+    padding: 0;
+  }
+  .circle-image{
+    padding: 0 0 20px 0;
+  }
+  .circle-title::before{
+    left: 45%;
+  }
+  .specialist-contents{
+    width: 60%;
+  }
+  .specialist-title{
+    padding: 50px 0 0 0;
+  }
+  .specialist-contents .specialist-content{
+    font-size: 1.6vw;
+  }
+  .specialist-phone{
+    left: 5%;
+    height: 600px;
+    width: 400px;
+  }
+  .specialist-slider-menu{
+    bottom: 5%;
+  }
+  .specialist-dot{
+    width: 100%;
+  }
+  .portfolio-title{
+    font-size: 1.6vw;
+  }
+  .portfolio-content{
+    font-size: 1.5vw;
+    width: 100%;
+  }
+  .portfolio-title::before{
+    padding: 10%;
+    left: 40%;
+  }
+  .subscribe-input{
+    width: 30%
+  }
+  .subscribe-button{
+    width: 15%;
+  }
+  .footer-information li{
+    width: 30%;
+  }
+  .footer-dot{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 716px ){
+  .jumbotron-title{
+    padding-top: 100px;
+  }
+  .jumbotron-button{
+    padding-bottom: 150px;
+  }
+  .introduction-title{
+    padding: 50px 0 20px 0;
+  }
+  .introduction-content{
+    font-size: 2vw;
+    width: 90%;
+    padding: 0 0 50px 0;
+  }
+  .introduction-dot{
+    width: 100%;
+  }
+  .generic-dot{
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+  .generic-circles li{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .generic-circles li:not(:last-child){
+    padding: 0;
+  }
+  .specialist-dot{
+    width: 100%;
+  }
+  .circle-image{
+    padding: 0 0 20px 0;
+  }
+  .circle-title::before{
+    left: 45%;
+  }
+  .specialist-contents{
+    width: 80%;
+  }
+  .specialist-title{
+    padding: 50px 0 0 0;
+  }
+  .specialist-contents .specialist-content{
+    font-size: 2.2vw;
+  }
+  .specialist-phone{
+    left: 0;
+    height: 600px;
+    width: 400px;
+  }
+  .specialist-slider-menu{
+    bottom: 5%;
+  }
+  .section-portfolio{
+    margin: 50px 0;
+  }
+  .portfolio-wrapper li{
+    width: 80%;
+  }
+  .portfolio-wrapper li:not(:last-child){
+    margin-right: 0;
+  }
+  .portfolio-title{
+    font-size: 2vw;
+  }
+  .portfolio-content{
+    font-size: 2.5vw;
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+  .portfolio-hidden{
+    height: 98.5%;
+  }
+  .subscribe-input{
+    width: 50%;
+    margin: 0 0 50px 0;
+  }
+  .subscribe-button{
+    width: 30%;
+  }
+  .subscribe-icon{
+    padding: 50px 0 0 30px;
+  }
+  .footer-information{
+    margin: 0 0 50px 0;
+  }
+  .footer-information li{
+    width: 80%;
+    margin: 0 0 50px 0;
+  }
+  .footer-information li:not(:last-child){
+    margin-right: 0;
+  }
+  .footer-dot{
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+  .subfooter-title{
+    padding: 20px 0;
+  }
+  .subfooter-title li{
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
 }
